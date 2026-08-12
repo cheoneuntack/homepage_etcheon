@@ -1,0 +1,66 @@
+{
+  "office": {
+    "name": "푸르지오뱅크 공인중개사사무소",
+    "agent": "천은택 공인중개사",
+    "phone": "031-296-1800",
+    "regNo": "가3678-4404",
+    "address": "경기도 수원시 장안구 화산로 87, 상가102호 (천천푸르지오상가)",
+    "naverRealtorId": "apt1800"
+  },
+  "updatedAt": null,
+  "isSampleData": true,
+  "listings": [
+    {
+      "id": "sample-1",
+      "complex": "화서역푸르지오더에듀포레",
+      "dealType": "매매",
+      "price": "9억 5,000",
+      "areaType": "84A",
+      "areaM2": "84.98",
+      "floor": "12/25층",
+      "direction": "남향",
+      "desc": "역세권, 판상형 구조, 즉시입주 가능",
+      "tags": ["역세권", "판상형", "즉시입주"],
+      "naverLink": "https://new.land.naver.com/complexes/23880?realtorId=apt1800"
+    },
+    {
+      "id": "sample-2",
+      "complex": "화서역푸르지오더에듀포레",
+      "dealType": "전세",
+      "price": "5억 8,000",
+      "areaType": "59A",
+      "areaM2": "59.96",
+      "floor": "7/25층",
+      "direction": "남동향",
+      "desc": "신혼부부 추천, 학군 우수",
+      "tags": ["학군우수", "저층X", "채광좋음"],
+      "naverLink": "https://new.land.naver.com/complexes/23880?realtorId=apt1800"
+    },
+    {
+      "id": "sample-3",
+      "complex": "수원역푸르지오자이",
+      "dealType": "매매",
+      "price": "8억 2,000",
+      "areaType": "84B",
+      "areaM2": "84.32",
+      "floor": "18/29층",
+      "direction": "남향",
+      "desc": "수원역 도보 이용권, 상권 인접",
+      "tags": ["더블역세권", "상권인접"],
+      "naverLink": "https://new.land.naver.com/complexes/23880?realtorId=apt1800"
+    },
+    {
+      "id": "sample-4",
+      "complex": "북수원자이렉스비아 상가",
+      "dealType": "월세",
+      "price": "5,000 / 250",
+      "areaType": "1층 상가",
+      "areaM2": "33.0",
+      "floor": "1층",
+      "direction": "-",
+      "desc": "단지 정문 상가, 업종 자유",
+      "tags": ["1층상가", "업종자유"],
+      "naverLink": "https://new.land.naver.com/complexes/23880?realtorId=apt1800"
+    }
+  ]
+}
