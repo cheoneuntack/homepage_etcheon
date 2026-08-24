@@ -290,147 +290,42 @@ ul.profile-list li::before {
 .about-text p { color: var(--sub); font-size: 15px; margin: 0 0 14px; }
 
 /* Listings */
-.listing-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-
-.filter-chip {
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--sub);
-  cursor: pointer;
-}
-
-.filter-chip.active {
-  background: var(--brand);
-  border-color: var(--brand);
-  color: #fff;
-}
-
-.update-note {
-  margin-left: auto;
-  font-size: 12px;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.update-note .live-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #33a852;
-  box-shadow: 0 0 0 3px rgba(51, 168, 82, 0.18);
-}
-
-.sample-banner {
-  background: #fff7ea;
-  border: 1px solid #f1d9a3;
-  color: #7a5a15;
-  font-size: 13px;
-  padding: 12px 16px;
-  border-radius: 10px;
-  margin-bottom: 22px;
-}
-
-.listing-grid {
+.listing-type-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
-.listing-card {
+.type-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 20px;
   box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  padding: 28px 16px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--brand-dark);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.listing-card:hover {
+.type-box:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
-}
-
-.listing-card .top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.deal-badge {
-  font-size: 12px;
-  font-weight: 800;
-  padding: 4px 10px;
-  border-radius: 999px;
-  color: #fff;
-  white-space: nowrap;
-}
-
-.deal-badge.매매 { background: var(--sale); }
-.deal-badge.전세 { background: var(--jeonse); }
-.deal-badge.월세 { background: var(--wolse); }
-
-.listing-card .price {
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.listing-card .complex-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.listing-card .meta {
-  font-size: 13px;
-  color: var(--sub);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 10px;
-}
-
-.listing-card .desc {
-  font-size: 13px;
-  color: var(--sub);
-}
-
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.tag-pill {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--brand-dark);
   background: var(--brand-light);
-  padding: 3px 9px;
-  border-radius: 999px;
 }
 
-.listing-card .card-foot {
-  margin-top: auto;
-  display: flex;
-  gap: 8px;
+.listing-action-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
-.listing-card .card-foot .btn { flex: 1; justify-content: center; }
+.listing-action-row .btn { justify-content: center; padding: 14px; font-size: 15px; }
 
 .empty-state {
   padding: 60px 20px;
@@ -609,4 +504,5 @@ footer.site .foot-links a:hover { color: #fff; }
 
 @media (max-width: 640px) {
   .brand { font-size: 22px; white-space: normal; line-height: 1.25; }
+  .listing-type-grid { grid-template-columns: 1fr; }
 }
